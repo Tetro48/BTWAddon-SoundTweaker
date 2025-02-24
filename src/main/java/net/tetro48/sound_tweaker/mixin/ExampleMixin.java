@@ -1,7 +1,6 @@
-package net.fabricmc.example.mixin;
+package net.tetro48.sound_tweaker.mixin;
 
 import btw.BTWMod;
-import net.minecraft.src.GuiMainMenu;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
