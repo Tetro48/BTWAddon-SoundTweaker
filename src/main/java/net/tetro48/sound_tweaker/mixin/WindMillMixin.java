@@ -9,6 +9,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public class WindMillMixin {
     @ModifyArg(method = "clientNotifyGearboxOfOverpoweredOctantChangeInDirection", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSound(DDDLjava/lang/String;FF)V", ordinal = 0))
     public String changeOverpoweringSound(String par7Str) {
-        return "btw:wind_mill.overpowering";
+        return "btw:entity.wind_mill.overpowering";
     }
 }

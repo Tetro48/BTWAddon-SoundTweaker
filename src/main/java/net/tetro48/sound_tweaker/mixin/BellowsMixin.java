@@ -9,10 +9,10 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 public class BellowsMixin {
     @ModifyArg(method = "clientNotificationOfMetadataChange", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSound(DDDLjava/lang/String;FF)V", ordinal = 0))
     public String changeBlowSound (String par7Str){
-        return "btw:bellows.blow";
+        return "btw:block.bellows.blow";
     }
     @ModifyArg(method = "clientNotificationOfMetadataChange", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSound(DDDLjava/lang/String;FF)V", ordinal = 1))
     public String changeSuckSound (String par7Str){
-        return "btw:bellows.suck";
+        return "btw:block.bellows.suck";
     }
 }

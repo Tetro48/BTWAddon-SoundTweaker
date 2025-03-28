@@ -5,10 +5,14 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "AxleMixin",
+    "BeaconEffectMixin",
     "BellowsMixin",
+    "BlockBeaconMixin",
+    "ContainerEnchantmentMixin",
     "GearBoxMixin",
     "MillstoneBlockMixin",
     "SawMixin",
+    "SpawnAnchorBeaconEffectMixin",
     "VerticalWindMillMixin",
     "WindMillMixin"
   ],
