@@ -8,15 +8,18 @@
     "BeaconEffectMixin",
     "BellowsMixin",
     "BlockBeaconMixin",
+    "BlockCakeMixin",
     "ContainerEnchantmentMixin",
     "GearBoxMixin",
     "MillstoneBlockMixin",
     "SawMixin",
+    "SoundManagerMixin",
     "SpawnAnchorBeaconEffectMixin",
     "VerticalWindMillMixin",
     "WindMillMixin"
   ],
   "client": [
+    "BTWEffectManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

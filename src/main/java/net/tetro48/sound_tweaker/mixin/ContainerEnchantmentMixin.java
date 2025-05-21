@@ -15,7 +15,6 @@ public class ContainerEnchantmentMixin {
 
     @ModifyArg(method = "enchantItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSoundAtEntity(Lnet/minecraft/src/Entity;Ljava/lang/String;FF)V"), index = 1)
     public String changeEnchantmentSoundName(String par2Str) {
-
         return "btw:block.enchantment_table.enchant";
     }
     @ModifyArg(method = "enchantItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSoundAtEntity(Lnet/minecraft/src/Entity;Ljava/lang/String;FF)V"), index = 2)

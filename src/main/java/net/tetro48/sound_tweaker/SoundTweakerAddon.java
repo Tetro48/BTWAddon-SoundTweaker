@@ -15,6 +15,7 @@ public class SoundTweakerAddon extends BTWAddon {
     public static AddonSoundRegistryEntry BEACON_DEACTIVATE = new AddonSoundRegistryEntry("btw:block.beacon.deactivate");
     public static AddonSoundRegistryEntry BELLOWS_BLOW = new AddonSoundRegistryEntry("btw:block.bellows.blow");
     public static AddonSoundRegistryEntry BELLOWS_SUCK = new AddonSoundRegistryEntry("btw:block.bellows.suck");
+    public static AddonSoundRegistryEntry CAKE_SCREAM = new AddonSoundRegistryEntry("btw:block.cake.scream", 5);
     public static AddonSoundRegistryEntry ENCHANTMENT_TABLE_ENCHANT = new AddonSoundRegistryEntry("btw:block.enchantment_table.enchant", 3);
     public static AddonSoundRegistryEntry MECHANICAL_AMBIENT = new AddonSoundRegistryEntry("btw:block.mechanical.ambient");
     public static AddonSoundRegistryEntry MECHANICAL_BREAK = new AddonSoundRegistryEntry("btw:block.mechanical.break");

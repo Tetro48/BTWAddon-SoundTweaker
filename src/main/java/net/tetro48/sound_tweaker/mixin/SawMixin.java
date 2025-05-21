@@ -21,12 +21,4 @@ public class SawMixin {
     public String changeSawCutSound(String par7Str) {
         return "btw:block.saw.cut";
     }
-    @Redirect(method = "onEntityCollidedWithBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playAuxSFX(IIIII)V"))
-    public void redirectMobCutSound(World world, int par1, int i, int j, int k, int par5) {
-        world.playSoundEffect(i + 0.5D, j + 0.5D, k + 0.5D, "btw:block.saw.cut", 1.5F + world.rand.nextFloat() * 0.1F, 1.9F + world.rand.nextFloat() * 0.1F);
-    }
-    @Redirect(method = "breakSaw", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playAuxSFX(IIIII)V"))
-    public void redirectSawBreakSound(World world, int par1, int i, int j, int k, int par5) {
-        world.playSoundEffect(i + 0.5D, j + 0.5D, k + 0.5D, "btw:block.mechanical.break", 2, 1f);
-    }
 }
