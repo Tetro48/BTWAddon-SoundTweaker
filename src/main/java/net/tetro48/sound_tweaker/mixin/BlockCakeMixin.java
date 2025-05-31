@@ -12,8 +12,4 @@ public abstract class BlockCakeMixin {
 	public void changePowerOnScreamSound(World world, int auxID, int x, int y, int z, int data) {
 		world.playSoundEffect(x, y, z, "btw:block.cake.scream", 1.0F, world.rand.nextFloat() * 0.4F + 0.8F);
 	}
-	@Redirect(method = "onBlockAdded", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playAuxSFX(IIIII)V"))
-	public void changePlaceScreamSound(World world, int auxID, int x, int y, int z, int data) {
-		world.playSoundEffect(x, y, z, "btw:block.cake.scream", 1.0F, world.rand.nextFloat() * 0.4F + 0.8F);
-	}
 }

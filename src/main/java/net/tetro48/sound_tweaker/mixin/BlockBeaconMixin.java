@@ -17,8 +17,4 @@ public class BlockBeaconMixin {
     public String changeActivateSound(String par7Str) {
         return "btw:block.beacon.activate";
     }
-    @Redirect(method = "onBlockActivated", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playAuxSFX(IIIII)V"))
-    public void changeScreamNoise(World world, int id, int i, int j, int k, int par5) {
-        world.playSoundEffect(i + 0.5D, j + 0.5D, k + 0.5D, "btw:block.beacon.anchor.scream", 1.0F + world.rand.nextFloat() * 0.1F, 1.0F + world.rand.nextFloat() * 0.1F);
-    }
 }

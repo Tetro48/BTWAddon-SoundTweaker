@@ -9,10 +9,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(SpawnAnchorBeaconEffect.class)
 public class SpawnAnchorBeaconEffectMixin {
-    @Redirect(method = "checkPlayerSpawnedAtBeacon", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playAuxSFX(IIIII)V"))
-    public void changeRespawnSound(World world, int auxID, int x, int y, int z, int data) {
-        world.playSound(x, y, z, "btw:block.beacon.anchor.scream", 1.0F, world.rand.nextFloat() * 0.4F + 0.25F);
-    }
     @ModifyArg(method = "checkPlayerSpawnedAtBeacon", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/World;playSoundEffect(DDDLjava/lang/String;FF)V"), index = 3)
     public String changeRespawnSound(String par7Str) {
         return "btw:block.beacon.anchor.respawn";
