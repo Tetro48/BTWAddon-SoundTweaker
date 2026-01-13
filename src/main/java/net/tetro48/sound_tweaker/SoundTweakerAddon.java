@@ -1,8 +1,9 @@
 package net.tetro48.sound_tweaker;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
-import btw.util.sounds.AddonSoundRegistryEntry;
+import api.AddonHandler;
+import api.BTWAddon;
+import api.util.AddonSoundRegistryEntry;
+import paulscode.sound.SoundSystemConfig;
 
 public class SoundTweakerAddon extends BTWAddon {
     private static SoundTweakerAddon instance;
@@ -31,6 +32,12 @@ public class SoundTweakerAddon extends BTWAddon {
 
     public SoundTweakerAddon() {
         super();
+    }
+
+    @Override
+    public void preInitialize() {
+        SoundSystemConfig.setNumberNormalChannels(4096);
+        SoundSystemConfig.setNumberStreamingChannels(128);
     }
 
     @Override

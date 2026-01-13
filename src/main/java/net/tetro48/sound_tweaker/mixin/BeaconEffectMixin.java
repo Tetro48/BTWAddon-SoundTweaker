@@ -1,6 +1,6 @@
 package net.tetro48.sound_tweaker.mixin;
 
-import btw.block.tileentity.beacon.BeaconEffect;
+import api.block.beacon.BeaconEffect;
 import net.minecraft.src.BlockBeacon;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
